@@ -2,7 +2,15 @@
 Feature: Authentification - OrangeHRM
   En tant que utilisateur je souhaite m'authentifier
 
-  @connexion
+  @ct-passant
+  Scenario: Authentification - OrangeHRM
+    Given Je me connecte sur l application OrangeHRM
+    When Je saisie le login "Admin"
+    And Je saisie le mot de passe "admin123"
+    And Je clique sur login
+    Then Redirection vers l accueil
+
+  @cnx
   Scenario Outline: Authentification - OrangeHRM
     Given Je me connecte sur l application OrangeHRM
     When Je saisie le login "<login>"
@@ -13,4 +21,3 @@ Feature: Authentification - OrangeHRM
     Examples: 
       | login | password |
       | Admin | admin123 |
-      | Slim  | slim123  |

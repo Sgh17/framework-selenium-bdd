@@ -1,9 +1,11 @@
 package com.e2eTests.automation.stepDefinitions;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import com.e2eTests.automation.pageObjects.AuthentificationOutlinePage;
+import com.e2eTests.automation.pageObjects.AuthentificationPage;
 import com.e2eTests.automation.util.CommonMethods;
 import com.e2eTests.automation.util.Setup;
 
@@ -45,6 +47,8 @@ public class AuthentificationOutlineStepDefinition {
 
 	@Then("^Redirection vers l accueil$")
 	public void redirectionVersLAccueil() throws Throwable {
-	   System.out.println("Successfully login");
+		PageFactory.initElements(driver, AuthentificationPage.class);
+		String text = AuthentificationPage.welcome.getText();
+		Assert.assertTrue(text.contains("Welcome"));
 	}
 }

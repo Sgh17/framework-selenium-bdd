@@ -52,7 +52,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Dec 12, 2020 07:16:11 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Dec 13, 2020 01:50:34 PM</span>
 				</a>
 			</li>
 			<li>
@@ -90,7 +90,9 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@connexion</a></li>
+					<li><a href='#'>@accueil</a></li>
+					<li><a href='#'>@recruitment</a></li>
+					<li><a href='#'>@PIM</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -168,7 +170,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>14</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -187,81 +189,144 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Authentification - OrangeHRM</span>
-						<span class='test-time'>Dec 12, 2020 07:16:11 PM</span>
+						<span class='test-name'>Accueil-OrangeHRM</span>
+						<span class='test-time'>Dec 13, 2020 01:50:34 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 26s+437ms</span>
+<div class='scenario node' test-id='2' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@recruitment</span>
+	</div>
+	<span class='duration right label'>0h 0m 15s+666ms</span>
 	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Authentification - OrangeHRM</span>
+		<b>Scenario</b>
+		<span class="desc-text">Acceder au module Recruitment</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='3' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@connexion</span>
-			</div>
+		<li test-id='3' class='node given pass' status='pass'>
 			
-			<b>Scenario</b>
+			<b>Given</b>
 			
-			<span class="bdd-step-name">Authentification - OrangeHRM</span>
+			<span class="bdd-step-name">Given Je me connecte sur l application OrangeHRM</span>
+				<div class='pre'>passed</div>
 			
-				<ul class='steps'>
-					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given Je me connecte sur l application OrangeHRM</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='5' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When Je saisie le login "Admin"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='6' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And Je saisie le mot de passe "admin123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='7' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And Je clique sur login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='8' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then Redirection vers l accueil</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
 		</li>
-		<li test-id='9' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@connexion</span>
-			</div>
+		<li test-id='4' class='node when pass' status='pass'>
 			
-			<b>Scenario</b>
+			<b>When</b>
 			
-			<span class="bdd-step-name">Authentification - OrangeHRM</span>
+			<span class="bdd-step-name">When Je saisie le login "Admin"</span>
+				<div class='pre'>passed</div>
 			
-				<ul class='steps'>
-					<li test-id='10' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given Je me connecte sur l application OrangeHRM</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='11' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When Je saisie le login "Slim"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='12' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And Je saisie le mot de passe "slim123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='13' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And Je clique sur login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='14' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then Redirection vers l accueil</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
+		</li>
+		<li test-id='5' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Je saisie le mot de passe "admin123"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='6' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Je clique sur login</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='7' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Redirection vers l accueil</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='8' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When je clique sur le module Recruitment</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='9' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then je verifie l affichage de la page Recruitment</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='10' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@PIM</span>
+	</div>
+	<span class='duration right label'>0h 0m 15s+419ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Acceder au module PIM</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='11' class='node given pass' status='pass'>
+			
+			<b>Given</b>
+			
+			<span class="bdd-step-name">Given Je me connecte sur l application OrangeHRM</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='12' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When Je saisie le login "Admin"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='13' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Je saisie le mot de passe "admin123"</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='14' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Je clique sur login</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='15' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Redirection vers l accueil</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='16' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When je clique sur le module PIM</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='17' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then je verifie l affichage de la page PIM</span>
+				<div class='pre'>passed</div>
+			
 		</li>
 	</ul>
 </div>
@@ -319,14 +384,14 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@connexion</span>
+						<span class='category-name'>@accueil</span>
 						<span class='category-status right'>
-							<span class='label pass'>3</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -342,18 +407,76 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Dec 12, 2020 07:16:11 PM</td>
-										<td class='linked' test-id='1'>Authentification - OrangeHRM</td>
+										<td>Dec 13, 2020 01:50:34 PM</td>
+										<td class='linked' test-id='1'>Accueil-OrangeHRM</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@recruitment</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
 									<tr>
-										<td>Dec 12, 2020 07:16:11 PM</td>
-										<td class='linked' test-id='3'>Authentification - OrangeHRM.Authentification - OrangeHRM.Authentification - OrangeHRM</td>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 13, 2020 01:50:34 PM</td>
+										<td class='linked' test-id='2'>Accueil-OrangeHRM.Acceder au module Recruitment</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@PIM</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
 									<tr>
-										<td>Dec 12, 2020 07:16:26 PM</td>
-										<td class='linked' test-id='9'>Authentification - OrangeHRM.Authentification - OrangeHRM.Authentification - OrangeHRM</td>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Dec 13, 2020 01:50:52 PM</td>
+										<td class='linked' test-id='10'>Accueil-OrangeHRM.Acceder au module PIM</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -394,25 +517,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>14</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Dec 12, 2020 07:16:11 PM</div>
+					<div class='panel-lead'>Dec 13, 2020 01:50:34 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Dec 12, 2020 07:16:39 PM</div>
+			 		<div class='panel-lead'>Dec 13, 2020 01:51:09 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 28s+450ms</div>
+					<div class='panel-lead'>0h 0m 35s+259ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -428,8 +551,26 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@connexion</td>
-							<td>3</td>
+							<td>@accueil</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@recruitment</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@PIM</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -466,7 +607,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 10,
+				passGrandChild: 14,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

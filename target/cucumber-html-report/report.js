@@ -1,135 +1,50 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("authentification/AuthentificationOutline.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("accueil/Accueil.feature");
 formatter.feature({
   "line": 2,
-  "name": "Authentification - OrangeHRM",
-  "description": "En tant que utilisateur je souhaite m\u0027authentifier",
-  "id": "authentification---orangehrm",
+  "name": "Accueil-OrangeHRM",
+  "description": "En tant que utilisateur orange je souhaite acceder au module Recruitment",
+  "id": "accueil-orangehrm",
   "keyword": "Feature",
   "tags": [
     {
       "line": 1,
-      "name": "@connexion"
+      "name": "@accueil"
     }
   ]
-});
-formatter.scenarioOutline({
-  "line": 6,
-  "name": "Authentification - OrangeHRM",
-  "description": "",
-  "id": "authentification---orangehrm;authentification---orangehrm",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 5,
-      "name": "@connexion"
-    }
-  ]
-});
-formatter.step({
-  "line": 7,
-  "name": "Je me connecte sur l application OrangeHRM",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "Je saisie le login \"\u003clogin\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "Je saisie le mot de passe \"\u003cpassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "Je clique sur login",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "Redirection vers l accueil",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 13,
-  "name": "",
-  "description": "",
-  "id": "authentification---orangehrm;authentification---orangehrm;",
-  "rows": [
-    {
-      "cells": [
-        "login",
-        "password"
-      ],
-      "line": 14,
-      "id": "authentification---orangehrm;authentification---orangehrm;;1"
-    },
-    {
-      "cells": [
-        "Admin",
-        "admin123"
-      ],
-      "line": 15,
-      "id": "authentification---orangehrm;authentification---orangehrm;;2"
-    },
-    {
-      "cells": [
-        "Slim",
-        "slim123"
-      ],
-      "line": 16,
-      "id": "authentification---orangehrm;authentification---orangehrm;;3"
-    }
-  ],
-  "keyword": "Examples"
 });
 formatter.before({
-  "duration": 9426909000,
+  "duration": 9929969200,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 15,
-  "name": "Authentification - OrangeHRM",
+formatter.background({
+  "line": 5,
+  "name": "",
   "description": "",
-  "id": "authentification---orangehrm;authentification---orangehrm;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@connexion"
-    }
-  ]
+  "type": "background",
+  "keyword": "Background"
 });
 formatter.step({
-  "line": 7,
+  "line": 6,
   "name": "Je me connecte sur l application OrangeHRM",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
+  "line": 7,
   "name": "Je saisie le login \"Admin\"",
-  "matchedColumns": [
-    0
-  ],
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
+  "line": 8,
   "name": "Je saisie le mot de passe \"admin123\"",
-  "matchedColumns": [
-    1
-  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "Je clique sur login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "Redirection vers l accueil",
   "keyword": "Then "
 });
@@ -137,7 +52,7 @@ formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeMeConnecteSurLApplicationOrangeHRM()"
 });
 formatter.result({
-  "duration": 1625097400,
+  "duration": 1828138200,
   "status": "passed"
 });
 formatter.match({
@@ -150,7 +65,7 @@ formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeSaisieLeLogin(String)"
 });
 formatter.result({
-  "duration": 117945900,
+  "duration": 144642700,
   "status": "passed"
 });
 formatter.match({
@@ -163,73 +78,98 @@ formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeSaisieLeMotDePasse(String)"
 });
 formatter.result({
-  "duration": 93195300,
+  "duration": 114550900,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeCliqueSurLogin()"
 });
 formatter.result({
-  "duration": 2129943600,
+  "duration": 2320983200,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationOutlineStepDefinition.redirectionVersLAccueil()"
 });
 formatter.result({
-  "duration": 176800,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 1691568600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 8634314600,
+  "duration": 78911200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 16,
-  "name": "Authentification - OrangeHRM",
+  "line": 13,
+  "name": "Acceder au module Recruitment",
   "description": "",
-  "id": "authentification---orangehrm;authentification---orangehrm;;3",
+  "id": "accueil-orangehrm;acceder-au-module-recruitment",
   "type": "scenario",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
-      "line": 1,
-      "name": "@connexion"
+      "line": 12,
+      "name": "@recruitment"
     }
   ]
 });
 formatter.step({
-  "line": 7,
+  "line": 14,
+  "name": "je clique sur le module Recruitment",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 15,
+  "name": "je verifie l affichage de la page Recruitment",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AccueilStepDefinition.jeCliqueSurLeModuleRecruitment()"
+});
+formatter.result({
+  "duration": 1081750500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AccueilStepDefinition.jeVerifieLAffichageDeLaPageRecruitment()"
+});
+formatter.result({
+  "duration": 67413000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1851150400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 8997796400,
+  "status": "passed"
+});
+formatter.background({
+  "line": 5,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 6,
   "name": "Je me connecte sur l application OrangeHRM",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 8,
-  "name": "Je saisie le login \"Slim\"",
-  "matchedColumns": [
-    0
-  ],
+  "line": 7,
+  "name": "Je saisie le login \"Admin\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 9,
-  "name": "Je saisie le mot de passe \"slim123\"",
-  "matchedColumns": [
-    1
-  ],
+  "line": 8,
+  "name": "Je saisie le mot de passe \"admin123\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 10,
+  "line": 9,
   "name": "Je clique sur login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "Redirection vers l accueil",
   "keyword": "Then "
 });
@@ -237,51 +177,89 @@ formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeMeConnecteSurLApplicationOrangeHRM()"
 });
 formatter.result({
-  "duration": 1860986700,
+  "duration": 2496975500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Slim",
+      "val": "Admin",
       "offset": 20
     }
   ],
   "location": "AuthentificationOutlineStepDefinition.jeSaisieLeLogin(String)"
 });
 formatter.result({
-  "duration": 99276000,
+  "duration": 100543600,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "slim123",
+      "val": "admin123",
       "offset": 27
     }
   ],
   "location": "AuthentificationOutlineStepDefinition.jeSaisieLeMotDePasse(String)"
 });
 formatter.result({
-  "duration": 92396400,
+  "duration": 112563600,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationOutlineStepDefinition.jeCliqueSurLogin()"
 });
 formatter.result({
-  "duration": 588336100,
+  "duration": 2376433500,
   "status": "passed"
 });
 formatter.match({
   "location": "AuthentificationOutlineStepDefinition.redirectionVersLAccueil()"
 });
 formatter.result({
-  "duration": 135900,
+  "duration": 38442100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 18,
+  "name": "Acceder au module PIM",
+  "description": "",
+  "id": "accueil-orangehrm;acceder-au-module-pim",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 17,
+      "name": "@PIM"
+    }
+  ]
+});
+formatter.step({
+  "line": 19,
+  "name": "je clique sur le module PIM",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 20,
+  "name": "je verifie l affichage de la page PIM",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "AccueilStepDefinition.jeCliqueSurLeModulePIM()"
+});
+formatter.result({
+  "duration": 1194629100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AccueilStepDefinition.jeVerifieLAffichageDeLaPagePIM()"
+});
+formatter.result({
+  "duration": 72256600,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1601084900,
+  "duration": 1659113300,
   "status": "passed"
 });
 });
